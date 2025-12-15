@@ -156,3 +156,10 @@ span.highlight {
 #content-projects table tbody tr.placeholder { display: table-row; }
 #content-volunteer table tbody tr { display: none; }
 #content-volunteer table tbody tr.placeholder { display: table-row; }
+/* Slightly smaller specific Experience logos */
+.exp-logo img[src$="rrc.png"],
+.exp-logo img[src$="node.jpeg"],
+.exp-logo img[src$="agv_logo.jpeg"] {
+  width: 128px;
+  height: 128px;
+}

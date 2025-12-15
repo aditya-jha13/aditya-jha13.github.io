@@ -240,7 +240,7 @@
                             Jul '24 - Mar' 25
                             <br>
                             <br>
-                            <p></p>
+                            <p> Worked on developing GenAI-based solution to automate IT Helpdesk operations by leveraging state-of-the-art LLM models for ticket resolution.</p>
                             </td>
                     </tr>
                     <tr>
@@ -250,12 +250,14 @@
                             </div>
                         </td>
                         <td style="padding:10px;width:75%;vertical-align:top">
-                            <papertitle style="color:gray"><big>MITACS Intern</big> </papertitle> <papertitle ><big> | NODE Lab, University of Alberta </big></papertitle>
+                            <papertitle style="color:gray"><big>MITACS Globalink Intern</big> </papertitle> <papertitle ><big> | NODE Lab, University of Alberta </big></papertitle>
                             <br>
                             Jun '23 - Aug' 23
                             <br>
                             <br>
-                            <p></p>
+                            <p>Worked under the supervision of Prof. Ehsan Hashemi on developing visual-based human and indoor object detection
+                                capabilites for mobile robots. 
+                            </p>
                             </td>
                     </tr>
                     <tr>
@@ -311,9 +313,15 @@
                             <papertitle ><big>UAV-based Visual Remote Sensing for Automated Building Inspection</big></papertitle>
                             <br>
                             Published in CVCIE Workshop, ECCV 2022
+                            <a href=".">[Website]</a>
                             <br>
                             <br>
-                            <p></p>
+                            <p>
+                                We automate the inspection of buildings through UAV-based image data collection and a post-processing module to infer and quantify the details which helps in avoiding manual inspection, reducing the time and cost.
+                                We introduced a novel method to estimate the distance between adjacent buildings and structures.
+                                We developed an architecture that can be used to segment roof tops in case of both orthogonal and non-orthogonal view using a state-of-the-art semantic segmentation model.
+                                Taking into consideration the importance of civil inspection of buildings we introduced a software library that helps in estimating the key structural parameters.
+                            </p>
                         </td>
                     </tr>
                 </tbody></table>
@@ -327,9 +335,26 @@
             <div id="content-competitions" class="collapse in">
 
             <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                <tr class="placeholder">
-                    <td style="padding:10px;width:100%;vertical-align:middle" colspan="2">
-                        <p>Projects placeholder — content coming soon.</p>
+                <tr>
+                    <td style="padding:10px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='images/f1tenth_video.gif' width="200">
+                        </div>
+                    </td>
+                    <td style="padding:10px;width:75%;vertical-align:top">
+                        <papertitle ><big>F1TENTH Autonomous Grand Prix</big></papertitle>
+                        <br>
+                        <a href="https://github.com/aditya-jha13/f1tenth_agv">[GitHub]</a>
+                        <a href=".">[Website]</a>
+                        <br>
+                        <br>
+                        <p>
+                            We needed to achieve high speed navigation for virtual sim racing. Our team developed a LiDAR-based autonomous racing stack 
+                            tuned to minimize the lap times and handle corners and obstacles smoothly.
+                        </p>
+                        <p>
+                            We also developed a reactive obstacle avoidance algorithm and integrated it with PID controller to achieve 3rd out of the 40 participating teams.
+                        </p>
                     </td>
                 </tr>
                 <tr>
@@ -341,12 +366,12 @@
                     <td style="padding:10px;width:75%;vertical-align:top">
                         <papertitle ><big>Drona Pluto Drone Swarm Challenge</big></papertitle>
                         <br>
-                        <a href="https://github.com/Cypre55/drdo-interiit22">[GitHub]</a>
+                        <a href="https://github.com/team11-auto/Team11-Final-Drona">[GitHub]</a>
                         <br>
                         <br>
                         <p>
                             Co-organised by <a href="http://www.iitkgp.ac.in/">IIT Kanpur</a> and <a href="https://www.drdo.gov.in/">Drona Aviation</a>, as part of the Inter
-                            IIT Tech Meet 11.0. This challenge aimed to develop a vision based state feedback control for an indoor multi-drone system handling socket communication with the flight controller without the use of ROS. Being a core team menber, I played a pivotal role in leading the communication and motion planning team. 
+                            IIT Tech Meet 11.0. This challenge aimed to develop a vision based state feedback control for an indoor multi-drone system handling socket communication with the flight controller without the use of ROS. Being a core team menber, I played a pivotal role in developing state estimation algorithms using depth camera feed and markers. 
                         </p>
                         <p>
                             We used a adaptive PID controller which received the current pose estimate on basis of precise detection of Aruco Tag using our vision module. Our team secured the first place.
@@ -368,110 +393,7 @@
 
             <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-                <tr>
-                    <td style="padding:10px;width:25%;vertical-align:middle">
-                        <div class="one">
-                            <img src='images/pinn.png' width="200">
-                        </div>
-                    </td>
-                    <td style="padding:10px;width:75%;vertical-align:top">
-                        <papertitle ><big>Physics Informed Augmentation for modelling dynamics of an Off-Road vehicle</big></papertitle>
-                        <br>
-                        Airlab, CMU
-                        <br>
-                        <br>
-                        <p>In spring 2023, my aim was to <b>enhance dynamics modeling for out-of-distribution (OOD) scenarios while maintaining in-domain accuracy</b>. I explored <b>Physics-Informed Neural Networks (PINN)</b>, which merge accurtacy of learning based methods with the generalization capability of traditional physics models. PINNs yielded significant improvements in modeling vehicle dynamics compared to solely data-dependent neural networks. However, during the summer of 2023, I encountered a key <b>limitation of PINN: it required well-spread data for physics evaluations</b>, a challenge in off-road driving due to data collection complexities.</p>
-                        <p>
-                            To address this limitation, I introduced <b>"PIAug - Physics Informed Augmentation," currently under review for ICRA 2024</b>. This approach involved using a physics priior for both augmenting a dataset while also introducting the phsyics principles to NN. I then optimised the deployment of the NN-based vehicle models by reducing the inference runtime by 6x and GPU memory requirements by 1.9x. As a usecase PIAug allowed the vehicle to navigate with 4x tighter tracking constraints at out-of-domain velocities.</p>
-                            <p></p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="padding:10px;width:25%;vertical-align:bottom">
-                        <div class="one">
-                            <img src='images/vm.png' width="200">
-                        </div>
-                    </td>
-                    <td style="padding:10px;width:75%;vertical-align:top">
-                        <papertitle ><big>Learning Vehicle Dynamics through Interactions for Off-Road Driving</big></papertitle>
-                        <br>
-                        Airlab, CMU
-                        <br>
-                        <br>
-                        <p>During my first summer at CMU in 2022, I focused towards developing an <b>online prediction system for a dynamics-based vehicle model</b>. This approach involved harnessing information from the <b>robot's history</b>, such as odometry and IMU data, and incorporating additional inputs about the <b>future's environemnt</b> like FPV images and processed top-down terrain maps. As a result of these efforts, we achieved a noteworthy 25% improvement in modeling accuracy for the vehicle's dynamics. However, the approach revealed limitations in handling out-of-distribution (OOD) scenarios, potentially leading to unsafe predictions of parameters. Despite these setbacks, this project introduced me to the stimulating field of aiding robots in navigating challenging environments. While we couldn't deploy this method on the ATV, it <b>strengthened my determination to continue working towards enhancing robotic navigation in demanding conditions</b>.</p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="padding:10px;width:25%;vertical-align:middle;">
-                        <div class="one">
-                            <img src='images/warehouse.gif' width="200">
-                        </div>
-                    </td>
-                    <td style="padding:10px;width:75%;vertical-align:top">
-                        <papertitle ><big>Networked Warehouse Automation</big></papertitle>
-                        <br>
-                        ARTPARK, IISc Bangalore in collaboration with NOKIA
-                        <br>
-                        <br>
-                        <p>The objective of this project was to develop a high-performance network infrastructure to create a safe network-aware autonomy for multiple robots. Being one of the earliest members in the team, I was responsible with  developing the <b>Multi Robot Task Allocation</b> module. I did this using a market auction based approach which considers the time required to complete the already queded tasks of each robot before finding the robot which would optimize the overall time required by the fleet to execute the tasks. </p>
-                        <p> After this, I developed a <b>Multi Robot Path Planning</b> module by 
-                        <b>extending the existing NAV2 library to support multirobot navigation</b>. At last, I proposed and showcase how sharing ego-footprint information with other robots in vicinty over a shared network can help in proactively avoiding the other robots. This also allows robots to <b>avoid collisions even when other robots cannot be detected using sensors</b> due to occluded sensing range. Example - when 2 robots are coming from round the corner and are not detected by each other's lidar or camera due to obstruction in sensing. This work was submitted at ICRA 2022.</p>    
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="padding:10px;width:25%;vertical-align:middle">
-                        <div class="one">
-                            <img src='images/frenet.png' width="200">
-                        </div>
-                    </td>
-                    <td style="padding:10px;width:75%;vertical-align:top">
-                        <papertitle ><big>Trajectory Generation in Frenet Frame</big></papertitle>
-                        <br> AGV, IIT Kharagpur
-                        [<a href="https://github.com/Parv-Maheshwari/Frenet_Planner_Simulation">code</a> | <a href="https://www.youtube.com/watch?v=BPBGQtXIR2Q&ab_channel=AnimeshJha"> demo</a>]
-                        <br>
-                        <br>
-                        <p>Led a team of 11 to develop an Open Source Python and C++ implementation for a sampling based planner in Frenet Frame with support for both <b>ROS1 and ROS2 </b> support along with simulation support of Gazebo and LGSVL. <b>OpenMP</b> was used for increasing the speed of the sampling and map updation step while planning. In its early days, this project acted as the first step towards parallelized computing and later this also became the <b>first reasearch project where I led a team :)</b></p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="padding:10px;width:25%;
-                    vertical-align:middle;">
-                        <div class="one">
-                            <img src='images/hp3.gif' width="160">
-                        </div>
-                    </td>
-                    <td style="padding:10px;width:75%;vertical-align:top">
-                        <papertitle ><big>Batched Cholesky Decomposition using High Performance Parallel Programming</big></papertitle>
-                        <br> Term project under Prof. Soumyajit Dey
-                        [<a href="https://github.com/shubheshanand/HP3_Batched_Cholesky_Decomposition">code</a> | <a href="https://drive.google.com/file/d/1u6JSFt_aClx81f-IuMunYd88p9ByHx4N/view"> report</a>]
-                        <br>
-                        <br>
-                        <p>
-                            Implemented an optimized tiled and batched Cholesky factorization in <b>CUDA</b> using only single-precision arithmetic. Extensive experiments were then conducted on advantages of chunking while tuning the parameters of tile size, and order of looking. This project helped me get aquantied to CUDA and helped me understand how to efficiently exploit its use by <b>efficient use of continuous threads and blocks</b>. 
-                        </p>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="padding:10px;width:25%;vertical-align:middle">
-                        <div class="one">
-                            <img src='images/covid.jpg' width="200">
-                        </div>
-                    </td>
-                    <td style="padding:10px;width:75%;vertical-align:top">
-                        <papertitle ><big>Disease Checker Bot – Using Evolutionary Algorithms</big></papertitle>
-                        <br> Term project under Prof. Nirupam Chakraborti, IIT Kharagpur
-                        [<a href="https://github.com/Parv-Maheshwari/disease-checker-bot/blob/main/GA_Project_disease_checking_bot.ipynb">code</a> | <a href="https://github.com/Parv-Maheshwari/disease-checker-bot/blob/main/Term%20Project%20of%20Genetic%20Algorithms%20-%2019MA20033%20(1).pdf"> report</a>]
-                        <br>
-                        <br>
-                        <p>Developed a primary healthcare disease checker bot as a <b>combination of a traditional multi-layer perceptron neural netowork and steps of evolutionary/genetic algorithms</b> like – Selection, Crossover, and Mutation. Used SymCat, a public dataset mapping diseases to various symptoms, as the training and validatiaon dataset. Further compared this hybrid method against standard classifiers based on  Naïve Bayes Classifier, neural networks and random forest. 
-                        </p>
-                    </td>
-                </tr>
+                
 
             </tbody></table>
             </div>
