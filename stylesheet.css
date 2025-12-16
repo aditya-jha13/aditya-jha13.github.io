@@ -151,9 +151,7 @@ span.highlight {
   display: block;
 }
 
-/* Hide existing rows in placeholders sections */
-#content-projects table tbody tr { display: none; }
-#content-projects table tbody tr.placeholder { display: table-row; }
+/* Hide placeholder rows only in sections that are still WIP */
 #content-volunteer table tbody tr { display: none; }
 #content-volunteer table tbody tr.placeholder { display: table-row; }
 /* Slightly smaller specific Experience logos */
